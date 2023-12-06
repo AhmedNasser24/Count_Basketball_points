@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class MyElevatedButton extends StatelessWidget {
   final Function() onPressed;
   final String text;
-  final dynamic? textColor;
-  final dynamic? elevatedButtonColor;
-  MyElevatedButton(
-      {required this.onPressed,
+  final dynamic textColor;
+  final dynamic elevatedButtonColor;
+  const MyElevatedButton(
+      {super.key, required this.onPressed,
       required this.text,
       this.textColor,
       this.elevatedButtonColor});
@@ -14,7 +14,7 @@ class MyElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(6),
+      padding: const EdgeInsets.all(6),
       child: ElevatedButton(
           onPressed: onPressed(),
           style: ButtonStyle(

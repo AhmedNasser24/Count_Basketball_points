@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 
 class VerticalSize extends StatelessWidget {
-  const VerticalSize( this.value);
+  const VerticalSize( this.value, {super.key});
   final double value ;
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class VerticalSize extends StatelessWidget {
 }
 
 class HorizontalSize extends StatelessWidget {
-  const HorizontalSize( this.value );
+  const HorizontalSize( this.value, {super.key} );
   final double value ;
   @override
   Widget build(BuildContext context) {
